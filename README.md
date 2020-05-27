@@ -1,5 +1,5 @@
-# escuelajs-reto-03
-Reto 3 Septiembre 14: Curso de Fundamentos de JavaScript
+# javascript-challenge
+Reto Fundamentos de JavaScript
 
 # Instalación
 
@@ -24,7 +24,8 @@ Una vez que tu aplicación ya esté funcionando convierte el código a ECMAScrip
 Transforma el código escrito en ECMAScript6(ES6) para que funcione con promesas y así evitar el Callback Hell del final.
 
 # Contributing
-If someone wants to add or improve something, I invite you to collaborate directly in this repository: [escuelajs-reto-03](https://github.com/platzi/escuelajs-reto-03/)
+If someone wants to add or improve something, I invite you to collaborate directly in this repository: [javascript-challenge](https://github.com/gndx/javascript-challenge/)
 
 # License
-escuelajs-reto-03 is released under the [MIT License](https://opensource.org/licenses/MIT).
+
+javascript-challenge is released under the [MIT License](https://opensource.org/licenses/MIT).
