@@ -1,0 +1,27 @@
+{
+  "name": "escuelajs-reto-03",
+  "version": "1.0.0",
+  "description": "Reto 3 Septiembre 14: Curso de Fundamentos de JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/platzi/escuelajs-reto-03.git"
+  },
+  "keywords": [
+    "javascript",
+    "escuelajs",
+    "node"
+  ],
+  "author": "Oscar Barajas <oscar@platzi.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/platzi/escuelajs-reto-03/issues"
+  },
+  "homepage": "https://github.com/platzi/escuelajs-reto-03#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
