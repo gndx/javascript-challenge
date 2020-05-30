@@ -8,6 +8,6 @@ Usuario Platzi:elizabeth
 - [x ] Bogotá
 
 # Retos:
-  - [ x] Primer problema
-  - [ ] Segundo problema
-  - [ ] Tercer problema
+  - [X] Primer problema
+  - [X] Segundo problema
+  - [X] Tercer problema
