@@ -1,13 +1,13 @@
 ## DESCRIPTION
 
-Nombre:
-Usuario Platzi:
+Nombre:elizabeth cubides coronado
+Usuario Platzi:elizabeth 
 
 ## Ciudad
 - [ ] Ciudad de México
-- [ ] Bogotá
+- [x ] Bogotá
 
 # Retos:
-  - [ ] Primer problema
+  - [ x] Primer problema
   - [ ] Segundo problema
   - [ ] Tercer problema
