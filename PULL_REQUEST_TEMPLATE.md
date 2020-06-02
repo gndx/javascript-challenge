@@ -9,5 +9,5 @@ Usuario Platzi: Maria_PerezG
 
 # Retos:
   - [Done] Primer problema
-  - [ ] Segundo problema
+  - [Done] Segundo problema
   - [ ] Tercer problema
