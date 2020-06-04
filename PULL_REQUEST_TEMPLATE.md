@@ -6,8 +6,7 @@ Usuario Platzi:
 ## Ciudad
 
 - [ ] Ciudad de México
-- [ ] Bogotá
-- [x] Barranquilla (COL)
+- [X] Bogotá
 
 # Retos:
 
