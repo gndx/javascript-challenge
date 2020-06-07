@@ -1,13 +1,13 @@
 ## DESCRIPTION
 
-Nombre:
-Usuario Platzi:
+Nombre: Linda Dayanna Loaiza Lugo
+Usuario Platzi:DayannaLoaiza
 
 ## Ciudad
 - [ ] Ciudad de México
-- [ ] Bogotá
+- [Y] Bogotá
 
 # Retos:
-  - [ ] Primer problema
-  - [ ] Segundo problema
-  - [ ] Tercer problema
+  - [Y] Primer problema
+  - [Y] Segundo problema
+  - [Y] Tercer problema
