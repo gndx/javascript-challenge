@@ -1,6 +1,6 @@
 const API = 'https://rickandmortyapi.com/api/character/'
 
-//const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const xhttp = new XMLHttpRequest();
 
 
