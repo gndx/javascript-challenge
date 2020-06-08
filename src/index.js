@@ -13,35 +13,31 @@ function fetchData(url_api) {
         if (xhttp.status == 200)
           resolve(JSON.parse(xhttp.responseText));
       else {
-        return reject(`Ocurrió un error`);
+        return reject(`Ocurrió un error, No se pudo descargar la información`);
       }
     }
   };
 })
 }
 
-
 Promise
   .all([fetchData(API)])
-  .then(data1 => {
-
+  .then(infoChar1 => {
 
   console.log(`Primer Llamado...`)
-  console.log(`'Personajes: ${data1[0].info.count}`);
-  return fetchData(`${API}${data1[0].results[0].id}`)
-
-
+  console.log(`'Personajes: ${infoChar1[0].info.count}`);
+  return fetchData(`${API}${infoChar1[0].results[0].id}`)
 })
 
-.then(data2 => {
+.then(infoChar2 => {
   console.log(`Segundo Llamado...`)
-  console.log(`Primer Personaje: ${data2.name}`);
-  return fetchData(data2.origin.url)
+  console.log(`Primer Personaje: ${infoChar2.name}`);
+  return fetchData(infoChar2.origin.url)
 })
 
-.then(data3 => {
+.then(infoDim => {
   console.log(`Tercer Llamado...`)
-  console.log(`Dimensión: ${data3.dimension}`);
+  console.log(`Dimensión: ${infoDim.dimension}`);
 })
 
 .catch(message => console.log(message))
