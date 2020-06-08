@@ -1,27 +1,26 @@
 {
-  "name": "escuelajs-reto-03",
+  "name": "javascritp_challenge",
   "version": "1.0.0",
-  "description": "Reto 3 Septiembre 14: Curso de Fundamentos de JavaScript",
+  "description": "Reto Fundamentos de JavaScript",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/platzi/escuelajs-reto-03.git"
+    "url": "git+https://github.com/andres1234loa/javascript-challenge.git"
   },
-  "keywords": [
-    "javascript",
-    "escuelajs",
-    "node"
-  ],
-  "author": "Oscar Barajas <oscar@platzi.com>",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/platzi/escuelajs-reto-03/issues"
+    "url": "https://github.com/andres1234loa/javascript-challenge/issues"
   },
-  "homepage": "https://github.com/platzi/escuelajs-reto-03#readme",
-  "dependencies": {
+  "homepage": "https://github.com/andres1234loa/javascript-challenge#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
     "xmlhttprequest": "^1.8.0"
-  }
+  },
+  "dependencies": {}
 }
