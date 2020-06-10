@@ -1,13 +1,13 @@
 ## DESCRIPTION
 
-Nombre:
-Usuario Platzi:
+Nombre: wilmar yoan malaver
+Usuario Platzi: @wilmaryoanmalavermalaver
 
 ## Ciudad
 - [ ] Ciudad de México
-- [ ] Bogotá
+- [done] Bogotá
 
 # Retos:
-  - [ ] Primer problema
-  - [ ] Segundo problema
-  - [ ] Tercer problema
+  - [done] Primer problema
+  - [done] Segundo problema
+  - [done] Tercer problema
