@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/platzi/escuelajs-reto-03#readme",
   "dependencies": {
-    "xmlhttprequest": "^1.8."
-    
+    "xmlhttprequest": "^1.8.0"
   }
 }
