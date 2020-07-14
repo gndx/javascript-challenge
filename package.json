@@ -4,7 +4,7 @@
   "description": "Reto 3 Septiembre 14: Curso de Fundamentos de JavaScript",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "src/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,6 @@
   "homepage": "https://github.com/platzi/escuelajs-reto-03#readme",
   "dependencies": {
     "xmlhttprequest": "^1.8.0"
+  },
+  "collaborator": "Alexander Guamán Cruz <alexander.guaman.cruz@gmail.com>"
   }
-}
