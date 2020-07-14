@@ -4,7 +4,7 @@ var API = 'https://rickandmortyapi.com/api/character/';
 var xhttp = new XMLHttpRequest();
 
 
-function fetchData(url_api, callback)
+function fetchData(url_api, callback) {
 
   xhttp.onreadystatechange = function (event) {
     if (xhttp.readyState === 4) {

@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+
+# other
+.node-xmlhttprequest-content-5016
+.node-xmlhttprequest-sync-5016
