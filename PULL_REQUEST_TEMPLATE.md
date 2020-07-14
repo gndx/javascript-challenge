@@ -9,5 +9,5 @@ Usuario Platzi: @alfonsoneiljimenez
 
 # Retos:
   - [x] Primer problema
-  - [ ] Segundo problema
+  - [x] Segundo problema
   - [ ] Tercer problema
