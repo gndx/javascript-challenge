@@ -1,32 +1,51 @@
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+const url='https://rickandmortyapi.com/api/character/';
 
-var API = 'https://rickandmortyapi.com/api/character/';
-var xhttp = new XMLHttpRequest();
+const fetchData=()=>{
+    fetch(url)
 
-function fetchData(url_api, callback) {
-  xhttp.onreadystatechange = function (event) {
-    if (xhttp.readyState === '4') {
-      if (xhttp.status == 200)
-        callback(null, xhttp.responseText);
-      else return callback(url_api);
+        .then(data=>data.json())
+        .then(data=>{
+
+            console.log(data);
+            
+            for(let i in data.results){
+                 document.write("<strong>id : </strong>" +data.results[i].id+
+                " "+"<strong>Name: </strong>"+data.results[i].name+
+                "<strong>Type: </strong>"+data.results[i].type+"<br><br>");
+        
+            }
+        
+        })
+        .catch(()=>{document.write("Personaje no encontrado!")})
+
+}
+
+
+
+async function getData(){
+            
+    
+     const data=await fetch('https://rickandmortyapi.com/api/character/')
+    
+    try {
+          if(data.ok){
+            const personajes=await data.json();
+            console.log(personajes);
+        
+          
+            for(let i in personajes.results){
+                document.write("<strong>Nombre: </strong>" +personajes.results[i].name+
+                " "+"<strong>Status: </strong>"+personajes.results[i].status+
+                "<strong>Type: </strong>"+personajes.results[i].type+"<br><br>");
+            }
+
+        }
+    } catch (error) {
+        console.log(error)
     }
-  };
-  xhttp.open('GET', url_api, false);
-  xhttp.send();
-};
+        
+    
+    
+}
 
-fetchData(API, function (error1, data1) {
-  if (error1) return console.error('Error' + ' ' + error1);
-  console.log('Primer Llamado...')
-  fetchData(API + data1.results[0].id, function (error2, data2) {
-    if (error2) return console.error(error1);
-    console.log('Segundo Llamado...')
-    fetchData(data2.origin.url, function (error3, data3) {
-      if (error3) return console.error(error3);
-      console.log('Tercero Llamado...')
-      console.log('Personajes:' + ' ' + data1.info.count);
-      console.log('Primer Personaje:' + ' ' + data2.name);
-      console.log('Dimensión:' + ' ' + data3.dimension);
-    });
-  });
-});
+getData()
