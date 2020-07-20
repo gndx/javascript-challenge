@@ -36,6 +36,8 @@ const fetchD1 = async (url_api) => {
 
 }
 
+fetchD1(API)
+
 //const fetchD2 = async (url_api) => {
 //  try {
 //    const response = await fetchData(url_api)
@@ -76,7 +78,6 @@ const fetchD1 = async (url_api) => {
 //  console.log(`Dimensión: ${response.dimension}`);
 //  return fetchData(API)
 //}
-fetchD1(API)
 
 //fetchData(API)
 //  .then(response => {
