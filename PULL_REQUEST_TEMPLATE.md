@@ -8,6 +8,6 @@ Usuario Platzi: @Kucu
 - [ * ] Bogotá
 
 # Retos:
-  - [ * ] Primer problema
-  - [ ] Segundo problema
+  - [ ] Primer problema
+  - [ * ] Segundo problema
   - [ ] Tercer problema
