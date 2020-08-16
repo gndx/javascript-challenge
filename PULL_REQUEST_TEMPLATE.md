@@ -9,5 +9,5 @@ Usuario Platzi: @Kucu
 
 # Retos:
   - [ ] Primer problema
-  - [ * ] Segundo problema
-  - [ ] Tercer problema
+  - [ ] Segundo problema
+  - [ * ] Tercer problema
