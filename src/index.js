@@ -4,14 +4,16 @@ var API = 'https://rickandmortyapi.com/api/character/';
 var xhttp = new XMLHttpRequest();
 
 function fetchData(url_api, callback) {
+
+  xhttp.open('GET', url_api, false);
+
   xhttp.onreadystatechange = function (event) {
-    if (xhttp.readyState === '4') {
+    if (xhttp.readyState == 4) {
       if (xhttp.status == 200)
-        callback(null, xhttp.responseText);
+        callback(null, JSON.parse(xhttp.responseText));
       else return callback(url_api);
     }
   };
-  xhttp.open('GET', url_api, false);
   xhttp.send();
 };
 

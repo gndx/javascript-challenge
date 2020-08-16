@@ -1,13 +1,13 @@
 ## DESCRIPTION
 
-Nombre:
-Usuario Platzi:
+Nombre: Jorge Andres Gutierrez
+Usuario Platzi: @Kucu
 
 ## Ciudad
 - [ ] Ciudad de México
-- [ ] Bogotá
+- [ * ] Bogotá
 
 # Retos:
-  - [ ] Primer problema
+  - [ * ] Primer problema
   - [ ] Segundo problema
   - [ ] Tercer problema
