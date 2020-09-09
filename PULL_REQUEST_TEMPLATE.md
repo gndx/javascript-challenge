@@ -9,5 +9,5 @@ Usuario Platzi: rafnixg
 
 # Retos:
   - [x] Primer problema
-  - [ ] Segundo problema
-  - [ ] Tercer problema
+  - [X] Segundo problema
+  - [X] Tercer problema
