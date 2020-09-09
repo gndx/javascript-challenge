@@ -1,13 +1,13 @@
 ## DESCRIPTION
 
-Nombre:
-Usuario Platzi:
+Nombre: Rafnix Guzmán
+Usuario Platzi: rafnixg
 
 ## Ciudad
 - [ ] Ciudad de México
 - [ ] Bogotá
 
 # Retos:
-  - [ ] Primer problema
-  - [ ] Segundo problema
-  - [ ] Tercer problema
+  - [x] Primer problema
+  - [X] Segundo problema
+  - [X] Tercer problema
