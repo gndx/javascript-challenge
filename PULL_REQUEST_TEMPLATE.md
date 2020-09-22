@@ -10,4 +10,4 @@ Usuario Platzi: jhon091199@gmail.com
 # Retos:
   - [x] Primer problema
   - [x] Segundo problema
-  - [ ] Tercer problema
+  - [x] Tercer problema
