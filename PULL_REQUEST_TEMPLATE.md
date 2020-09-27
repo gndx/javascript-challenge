@@ -8,6 +8,6 @@ Usuario Platzi: @Lorebratt
 - [X] Bogotá
 
 # Retos:
-  - [X] Primer problema
-  - [ ] Segundo problema
-  - [ ] Tercer problema
+  - [] Primer problema
+  - [X] Segundo problema
+  - [] Tercer problema
