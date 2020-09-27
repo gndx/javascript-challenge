@@ -1,13 +1,13 @@
 ## DESCRIPTION
 
-Nombre:
-Usuario Platzi:
+Nombre: Lorena Mosquera González
+Usuario Platzi: @Lorebratt
 
 ## Ciudad
 - [ ] Ciudad de México
-- [ ] Bogotá
+- [X] Bogotá
 
 # Retos:
-  - [ ] Primer problema
+  - [X] Primer problema
   - [ ] Segundo problema
   - [ ] Tercer problema
