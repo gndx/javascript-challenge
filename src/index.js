@@ -5,9 +5,12 @@ var xhttp = new XMLHttpRequest();
 
 function fetchData(url_api, callback) {
   xhttp.onreadystatechange = function (event) {
-    if (xhttp.readyState === '4') {
-      if (xhttp.status == 200)
-        callback(null, xhttp.responseText);
+    if (xhttp.readyState === 4) {
+      if (xhttp.status == 200){
+        const objectchange = JSON.parse(xhttp.responseText)
+          callback(null, objectchange);
+        }
+        
       else return callback(url_api);
     }
   };
