@@ -1,35 +1,38 @@
-const API = 'https://rickandmortyapi.com/api/character/';
+const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+
+const API = "https://rickandmortyapi.com/api/character/";
 const xhttp = new XMLHttpRequest();
 
-function fetchData (url_api) {
-    return new Promise((resolve, reject) => {
-      xhttp.open("GET", url_api, true);
-      xhttp.send();
-      xhttp.onreadystatechange = function (event)  {
-        if (xhttp.readyState === 4) {
-          if (xhttp.status == 200) resolve(JSON.parse(xhttp.responseText));
-          else {
-            return reject(`Ha habido un error`);
-          }
+const fetchData = (url_api) => {
+  xhttp.open("GET", url_api, false);
+  xhttp.responseType = "json";
+  return new Promise((response, reject) => {
+    xhttp.onreadystatechange = () => {
+      if (xhttp.readyState === 4) {
+        if (xhttp.status === 200) {
+          const res = JSON.parse(xhttp.responseText);
+          return response(res);
+        } else {
+          return reject(new Error("Error has ocurred!"));
         }
-      };
-    });
-}
+      }
+    };
+    xhttp.send();
+  });
+};
 
- Promise.all([fetchData(API)])
-  .then(data1 => {
-    console.log(`Primer Llamado...`);
-    console.log(`Personajes: ${data1[0].info.count}`);
-    return fetchData(`${API}${data1[0].results[0].id}`);
-  })
-  .then(data2 => {
-    console.log(`Segundo Llamado...`);
-    console.log(`Primer Personaje: ${data2.name}`);
-    return fetchData(data2.origin.url);
-  })
-  .then(data3 => {
-    console.log(`Tercero Llamado...`);
-    console.log(`Dimensión: ${data3.dimension}`);
-  })
-  .catch((message) => console.log(message)); 
+const getData = async (url) => {
+  try {
+    const first = await fetchData(url);
+    const second = await fetchData(`${API}${first.results[0].id}`);
+    const third = await fetchData(second.origin.url);
 
+    console.log(`Personajes: ${first.info.count}`);
+    console.log(`Primer Personaje: ${second.name}`);
+    console.log(`Dimensión: ${third.dimension}`);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+getData(API);
