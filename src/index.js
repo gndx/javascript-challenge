@@ -24,4 +24,4 @@ async function getData (){
     console.log(`Primer Personaje: ${second.name}`);
     console.log(`Dimensión: ${third.dimension}`);
 }
-getData()
+getData();
