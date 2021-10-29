@@ -20,8 +20,10 @@
   "bugs": {
     "url": "https://github.com/platzi/escuelajs-reto-03/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/platzi/escuelajs-reto-03#readme",
   "dependencies": {
+    "node-fetch": "^3.0.0",
     "xmlhttprequest": "^1.8.0"
   }
 }
