@@ -1,32 +1,27 @@
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+import fetch from 'node-fetch';
+let API = 'https://rickandmortyapi.com/api/character/';
 
-var API = 'https://rickandmortyapi.com/api/character/';
-var xhttp = new XMLHttpRequest();
-
-function fetchData(url_api, callback) {
-  xhttp.onreadystatechange = function (event) {
-    if (xhttp.readyState === '4') {
-      if (xhttp.status == 200)
-        callback(null, xhttp.responseText);
-      else return callback(url_api);
-    }
-  };
-  xhttp.open('GET', url_api, false);
-  xhttp.send();
+function fetchData(url_api) {
+  return fetch(url_api)
+    .then( response => {
+      if(response.status == 200){
+        return response.json()
+      }
+      console.log(response)
+    })
+    .catch(error => {
+      console.error(error)
+    });
 };
 
-fetchData(API, function (error1, data1) {
-  if (error1) return console.error('Error' + ' ' + error1);
-  console.log('Primer Llamado...')
-  fetchData(API + data1.results[0].id, function (error2, data2) {
-    if (error2) return console.error(error1);
-    console.log('Segundo Llamado...')
-    fetchData(data2.origin.url, function (error3, data3) {
-      if (error3) return console.error(error3);
-      console.log('Tercero Llamado...')
-      console.log('Personajes:' + ' ' + data1.info.count);
-      console.log('Primer Personaje:' + ' ' + data2.name);
-      console.log('Dimensión:' + ' ' + data3.dimension);
-    });
-  });
-});
+async function getData (){
+    const first = await fetchData(API);
+    const urlSecond = `${API}${first.results[0].id}`;
+    const second = await fetchData(urlSecond);
+    const urlThird = `${second.origin.url}`;
+    const third = await fetchData(urlThird);
+    console.log(`Personajes: ${first.info.count}`);
+    console.log(`Primer Personaje: ${second.name}`);
+    console.log(`Dimensión: ${third.dimension}`);
+}
+getData();
